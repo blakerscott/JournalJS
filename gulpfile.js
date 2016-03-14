@@ -39,3 +39,12 @@ gulp.task("build", function(){
 gulp.task("clean", function(){
   return del(['build', 'tmp']);
 });
+
+//will delete the entire build and tmp folders
+gulp.task("build", ['clean'], function(){
+  if (buildProduction) {
+    gulp.start('minifyScripts');
+  } else {
+    gulp.start('jsBrowserify');
+  }
+});
