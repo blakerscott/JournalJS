@@ -1,7 +1,8 @@
-var titleLength = require('./../js/journal.js')
-//jquery to display title title
+var journal = require('./../js/journal.js').journal
+
 $(document).ready(function() {
   $("#journal").submit(function(event) {
+    event.preventDefault();
     var title = $("input#title").val();
     var body = $("input#body").val();
     var output = new Journal(title, body);
@@ -13,9 +14,5 @@ $(document).ready(function() {
     $("#bodyOutput").prepend("<li>" + output.body + "</li>");
     $("#countOutput").prepend("<li>" + output.wordCount() + "</li>");
 
-    event.preventDefault();
-
   });
 });
-
-$
