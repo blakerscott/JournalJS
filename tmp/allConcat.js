@@ -5,18 +5,18 @@ $(document).ready(function() {
     var titleInput = $("input#title").val();
     console.log(titleInput);
     $(".entry").text(titleInput);
-    $("#response").show();
+    $("#titleOutput").show();
 
     event.preventDefault();
 
   });
 });
 
-//Length method for number of words in the title
-exports.bodyLength = function(body) {
-  var bodyArray = body.split(" ");
-  var bodyLength = bodyArray.length;
-
-  return bodyLength;
-
-}
+$(document).ready(function(){
+  $('#secondForm').submit(function(event){
+    event.preventDefault();
+    var body = $('#body').val();
+    $('#secondForm').hide();
+    $('#bodyOutput').prepend('<p>' body '</p>');
+  });
+});

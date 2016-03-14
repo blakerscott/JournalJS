@@ -5,7 +5,7 @@ $(document).ready(function() {
     var titleInput = $("input#title").val();
     console.log(titleInput);
     $(".entry").text(titleInput);
-    $("#response").show();
+    $("#titleOutput").show();
 
     event.preventDefault();
 
