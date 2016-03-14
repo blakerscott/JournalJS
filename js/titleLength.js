@@ -1,5 +1,5 @@
 //Length method for number of words in the title
-function titleLength(title) {
+exports.titleLength = function(title) {
   var titleArray = title.split(" ");
   var titleLength = titleArray.length;
 
