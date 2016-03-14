@@ -1,0 +1,11 @@
+{
+  "name": "journal",
+  "version": "1.0.0",
+  "description": "A simple journal app",
+  "main": "hello.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Blake and Erik",
+  "license": "ISC"
+}
