@@ -1,8 +1,18 @@
+//Length method for number of words in the title
+function titleLength(title) {
+  var titleArray = title.split(" ");
+  var titleLength = titleArray.length;
 
+  return titleLength;
+
+}
+
+
+//j query to display title title
 $(document).ready(function() {
-  $("form").submit(function(event) {
+  $("#journal form").submit(function(event) {
     var titleInput = $("input#title").val();
-    console.log(title);
+    console.log(titleInput);
     $(".entry").text(titleInput);
     $("#response").show();
 
