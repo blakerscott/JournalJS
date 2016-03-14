@@ -1,9 +1,10 @@
 
 $(document).ready(function() {
   $("form").submit(function(event) {
-    var response = $("input#response").val();
-    console.log(response);
-    $(".response").text(response);
+    var titleInput = $("input#title").val();
+    console.log(title);
+    $(".entry").text(titleInput);
+    $("#response").show();
 
     event.preventDefault();
 
