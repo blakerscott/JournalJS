@@ -1,7 +1,7 @@
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script type="text/javascript" src="build/js/app.js"></script>
+    <script type="text/javascript" src="js/browser.js"></script>
     <title>Journal</title>
   </head>
   <body>
@@ -9,15 +9,18 @@
     <form id="journal">
       <label for="title">Place title here:</label>
       <input id="title" type="text">
+      <button type="submit">Submit</button>
+    </form>
+    
+    <form id="secondForm">
       <label for="body">Write entry here:</label>
       <input id="body" type="text">
       <button type="submit">Submit</button>
     </form>
 
-    <h2>Journal Entry:</h2>
-     <div id="entry">
-       <p><span class="response"></span></p>
-     </div>
+    <h2>Journal Title:</h2>
+    <ul id="titleOutput"></ul>
+    <ul id="bodyOutput"></ul>
 
   </body>
 </html>
