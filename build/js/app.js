@@ -22,7 +22,7 @@ $(document).ready(function() {
     event.preventDefault();
     var title = $("input#title").val();
     var body = $("input#body").val();
-    var output = new Journal(title, body);
+    var output = new journal(title, body);
 
 
 
